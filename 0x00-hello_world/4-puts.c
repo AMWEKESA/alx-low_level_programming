@@ -3,9 +3,9 @@
 /**
   *main - Entry point of the c program
   *
-  * Descriptionn : prints the given text
+  * Description: prints the given text
   *
-  * Return : always return the argument in the main function
+  * Return: always return the argument in the main function
   */
 
 int main(void)
