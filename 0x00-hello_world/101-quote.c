@@ -1,9 +1,11 @@
-#include <stdi.h>
+#include <stdio.h>
 
 /**
   *main - starting point
-  *description: prints output
-  *return: return an int
+  *
+  *description: prints outpu
+  *
+  *Return: return an int
   */
 
 int main(void)
