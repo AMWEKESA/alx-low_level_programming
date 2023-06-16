@@ -14,7 +14,7 @@ int main(void)
 	do {
 		putchar(i);
 		i++;
-	} while (a <= 57);
+	} while (i <= 57);
 	putchar('\n');
 	return (0);
 }
