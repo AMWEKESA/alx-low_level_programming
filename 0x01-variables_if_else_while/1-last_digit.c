@@ -13,8 +13,7 @@
 int main(void)
 {
 	int n;
-	int a;
-	int last_Digit = a;
+	int a; /* Declaring variable for last digit */
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
