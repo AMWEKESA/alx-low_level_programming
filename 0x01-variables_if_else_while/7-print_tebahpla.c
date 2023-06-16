@@ -15,6 +15,6 @@ int main(void)
 		putchar(i);
 		i--;
 
-	} while (i => 97);
+	} while (i >= 97);
 	return (0);
 }
