@@ -16,8 +16,8 @@ int main(void)
 		if (a != 101 && a != 113)
 		{
 		putchar (a);
-		a++;
 		}
+		a++;
 	} while (a <= 122);
 
 	putchar ('\n');
