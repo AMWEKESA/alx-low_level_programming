@@ -14,7 +14,7 @@ int main(void)
 	do {
 		putchar(a);
 		a++;
-	} while (a <= 122)
+	} while (a <= 122);
 	putchar('\n');
 	return (0);
 }
