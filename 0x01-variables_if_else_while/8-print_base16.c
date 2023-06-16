@@ -1,4 +1,4 @@
-<F5>#include <stdio.h>
+#include <stdio.h>
 /**
 * main - starting pt
 *
