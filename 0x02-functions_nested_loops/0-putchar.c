@@ -1,7 +1,6 @@
 #include "main.h"
-/**
-* main - starting pt
-*
+
+/**                                                                3 * main - starting pt
 * Description: prints _putchar
 *
 *Return: returns an int val
