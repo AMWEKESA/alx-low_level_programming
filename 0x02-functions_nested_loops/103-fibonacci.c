@@ -4,7 +4,7 @@
  * even_fib_sum - Calculates the sum of even Fibonacci values
  *
  * Return: The sum of even Fibonacci values
- */;
+ */
 unsigned long int even_fib_sum(void)
 {
 	int x;
