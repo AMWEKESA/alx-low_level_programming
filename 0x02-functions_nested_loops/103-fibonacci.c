@@ -1,31 +1,44 @@
 #include <stdio.h>
 
 /**
-  *main - find and print sum of even numbers
-  * should be followed by a new line
-  * Return: -Always SUCCESS
-  */
+ * even_fib_sum - Calculates the sum of even Fibonacci values
+ *
+ * Return: The sum of even Fibonacci values
+ */;
+unsigned long int even_fib_sum(void)
+{
+	int x;
+	unsigned long int y, z, next, sum;
 
+	y = 1;
+	z = 2;
+	sum = 0;
+
+	while (x = 1 && x <= 33)
+	{
+		if (y < 4000000 && (y % 2) == 0)
+		{
+			sum = sum + y;
+		}
+		next = y + z;
+		y = z;
+		z = next;
+		x++;
+	}
+
+	return (sum);
+}
+
+/**
+ * main - starting point of the program
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	unsigned long x = 1, y = 2, sum_of_even = 0;
-	unsigned long even_fib_sum = 2; /* sum of even fibonacci */
+	unsigned long int sum = even_fib_sum();
 
-	do {
-		x = y;
-		sum_of_even = x +  y;
+	printf("%lu\n", sum);
 
-		if (sum_of_even % 2 == 0)
-		{
-			even_fib_sum += sum_of_even;
-		}
-
-		x = y;
-		y = sum_of_even;
-
-	} while (sum_of_even < 4000000);
-
-	printf("%lu\n", even_fib_sum);
-
-	return (even_fib_sum);
+	return (0);
 }
