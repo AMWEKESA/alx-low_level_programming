@@ -21,7 +21,7 @@ int main(void)
 
 		/* condition for the series */
 
-		if (i < 50)
+		if (i == 49)
 			printf(" ");
 		else
 			printf("\n");
