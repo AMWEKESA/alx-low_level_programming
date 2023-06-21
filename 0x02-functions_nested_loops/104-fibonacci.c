@@ -20,7 +20,7 @@ int main(void)
 
 	for (x = 1; x < 91; x++)
 	{
-		pintf("%lu", next);
+		printf("%lu", next);
 		next += prev;
 		prev = next - prev;
 	}
