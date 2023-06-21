@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long x = 1, y = 2, sum_of_even = 0:;
+	unsigned long x = 1, y = 2, sum_of_even = 0;
 	unsigned long even_fib_sum = 2; /* sum of even fibonacci */
 
 	do {
