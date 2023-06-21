@@ -14,7 +14,7 @@ unsigned long int even_fib_sum(void)
 	z = 2;
 	sum = 0;
 
-	while (x = 1 && x <= 33)
+	while ((x = 1) && (x <= 33))
 	{
 		if (y < 4000000 && (y % 2) == 0)
 		{
