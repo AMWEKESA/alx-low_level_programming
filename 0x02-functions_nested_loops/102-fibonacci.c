@@ -17,14 +17,17 @@ int main(void)
 	for (i = 3; i <= 50; i++)
 	{
 		sum_of_fib = t1 + t2;
-		/* condition forthe series */
+		printf("%lu", sum_of_fib);
 
-		if (sum_of_fib >= 50)
-			break;
+		/* condition for the series */
 
-		printf("t1, t2, ;8%lu", t1, t2, sum_of_fib);
-		 t1 = t2;
+		t1 = t2;
 		t2 = sum_of_fib;
+
+		if (i < 50)
+			printf("\n");
+		else
+			printf(" ");
 	}
 
 	return (0);
