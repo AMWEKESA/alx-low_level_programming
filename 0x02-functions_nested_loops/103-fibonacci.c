@@ -23,9 +23,9 @@ int main(void)
 		x = y;
 		y = sum_of_even;
 
-		printf("%lu\n", even_fib_sum);
-
 	} while (sum_of_even < 4000000);
 
-	return (0);
+	printf("%lu\n", even_fib_sum);
+
+	return (even_fib_sum);
 }
