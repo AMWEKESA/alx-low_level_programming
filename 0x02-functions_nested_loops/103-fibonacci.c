@@ -9,7 +9,6 @@
 int main(void)
 {
 	unsigned long x = 1, y = 2, sum_of_even = 2;
-	int i;
 
 	do {
 		x = y;
@@ -17,7 +16,7 @@ int main(void)
 
 		if (sum_of_even % 2 == 0)
 		{
-			printf("%lu",sum_of_even);
+			printf("%lu", sum_of_even);
 			if (sum_of_even + y < 4000000)
 			{
 				printf(", ");
@@ -29,6 +28,6 @@ int main(void)
 
 		x = y;
 		y = sum_of_even;
-	} while(sum_of_even <  4000000);
+	} while (sum_of_even < 4000000);
 	return (0);
 }
