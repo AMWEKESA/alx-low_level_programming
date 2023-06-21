@@ -14,6 +14,8 @@ int main(void)
 
 	unsigned long t1 = 0, t2 = 1, sum_of_fib;
 
+	printf("%lu, %lu, ", t1 t2); /* print first 2 */
+
 	for (i = 3; i <= 50; i++)
 	{
 		sum_of_fib = t1 + t2;
@@ -21,13 +23,13 @@ int main(void)
 
 		/* condition for the series */
 
+		if (i < 50)
+			printf(" ");
+		else
+			printf("\n");
+
 		t1 = t2;
 		t2 = sum_of_fib;
-
-		if (i < 50)
-			printf("\n");
-		else
-			printf(" ");
 	}
 
 	return (0);
