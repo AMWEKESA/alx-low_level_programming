@@ -14,7 +14,7 @@ int main(void)
 
 	unsigned long t1 = 0, t2 = 1, sum_of_fib;
 
-	printf("%lu, %lu, ", t1 t2); /* print first 2 */
+	printf("%lu, %lu, ", t1, t2); /* print first 2 */
 
 	for (i = 3; i <= 50; i++)
 	{
