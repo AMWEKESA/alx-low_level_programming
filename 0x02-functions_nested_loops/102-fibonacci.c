@@ -16,7 +16,7 @@ int main(void)
 
 	printf("%lu, %lu, ", t1, t2); /* print first 2 */
 
-	for (i = 3; i <= 50; i++)
+	for (i = 0; i <= 50; i++)
 	{
 		sum_of_fib = t1 + t2;
 		printf("%lu", sum_of_fib);
