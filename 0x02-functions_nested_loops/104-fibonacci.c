@@ -20,9 +20,9 @@ int main(void)
 
 	for (x = 1; x < 91; x++)
 	{
-		pintf(", %lu", next);
+		pintf("%lu", next);
 		next += prev;
-		prev = nextt - prev;
+		prev = next - prev;
 	}
 
 
@@ -36,7 +36,7 @@ int main(void)
 	{
 		printf(", %lu", next_1 + (next_2 / l));
 		printf("%lu", next_2 % l);
-		next_1 = next_1 + prerv_1;
+		next_1 = next_1 + prev_1;
 		prev_1 = next_1 - prev_1;
 		prev_2 = next_2 + prev_2;
 		prev_2 = next_2 - prev_2;
