@@ -22,6 +22,10 @@ int main(void)
 
 		x = y;
 		y = sum_of_even;
+
+		printf("%lu\n", even_fib_sum);
+
 	} while (sum_of_even < 4000000);
-	return sum_of_even;
+
+	return (0);
 }
