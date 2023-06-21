@@ -20,7 +20,7 @@ int main(void)
 
 	for (x = 1; x < 91; x++)
 	{
-		printf("%lu", next);
+		printf(", %lu", next);
 		next += prev;
 		prev = next - prev;
 	}
@@ -34,11 +34,10 @@ int main(void)
 
 	for (x = 92; x < 99; x++)
 	{
-		printf("%lu, ", next_1 + (next_2 / l));
-		printf("%lu, ", next_2 % l);
-		next_1 = next_1 + prev_1;
+		printf(", %lu, %lu", next_1, next_2);
+		next_1 =+ prev_1;
 		prev_1 = next_1 - prev_1;
-		prev_2 = next_2 + prev_2;
+		prev_2 =+ prev_2;
 		prev_2 = next_2 - prev_2;
 	}
 	printf("\n");
