@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - prints nos from 0-9 except 2 n 4
- * @x: int 
+ * @x: int
  * Return: returns success
  */
 
