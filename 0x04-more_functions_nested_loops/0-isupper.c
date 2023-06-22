@@ -7,7 +7,7 @@
   * Return: retrn 1 when + else 0
   */
 
-int _isupper(int x);
+int _isupper(int x)
 {
 	if (x >= 65 && x <= 90)
 	{	return (1);
