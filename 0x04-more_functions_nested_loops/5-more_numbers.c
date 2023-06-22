@@ -8,7 +8,7 @@
 
 void more_numbers(void)
 {
-	int x, y; 
+	int x, y;
 
 	/* int y rep no of lines */
 	for (y = 0; y <= 9; y++)
