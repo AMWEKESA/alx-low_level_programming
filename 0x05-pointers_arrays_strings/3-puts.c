@@ -4,7 +4,7 @@
  * @str: string whos length is t be retuned
  * Return: returns
  */
-int _strlen(char *str);
+int _strlen(char *str)
 {
 	while (str != '\0')
 	{
