@@ -1,23 +1,22 @@
 #include "main.h"
 
 /**
- * print_rev - ptints str in rev
- * @s: char to be revesed
- * Return: returns
+ * print_rev - ptints string in reverse
+ * @s: string to be revesed
+ * Return: returns 0
  */
 
 void print_rev(char *s)
 {
-	int longi = 0;
-	int x;
+	int length = 0;
 
 	while (*s != '\0')
 	{
-		longi++;
+		length++;
 		s++
 	}
 	s--;
-	for (o = longi; O > 0 O--)
+	for (; length > 0; length--)
 	{
 		_putchar(*s);
 		s--;
