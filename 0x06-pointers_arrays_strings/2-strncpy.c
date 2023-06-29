@@ -2,13 +2,13 @@
 
 /**
  * _strncpy - copies a string
- * @dest: destination buffer to copy the string to
- * @src: source string to be copied
- * @n: maximum number of characters to be copied
+ * @dest: buffer string to
+ * @src: string to be copied
+ * @n: max characters to be copied
  * Return: returns a pointer to the destination buffer
  */
 
-char *_strncpy(char *dest, const char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
