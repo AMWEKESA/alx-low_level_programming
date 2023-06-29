@@ -2,25 +2,28 @@
 
 /**
  *_strcat - concatenates two strings
- * @src: string to be conatenated wit dest
- * @dest: string to be concatenated with src
+ * @src: input val.
+ * @dest: input val to be concatenated with src
+ * @n: input val
  * Return: returns
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src, int n)
 {
 
 	int i, len = 0;
 
 
-	while (dest[i] != '\0')
+	while (src[len] != '\0')
 	{
-		i++;
+		len++;
 	}
-	for (i = 0; src[len] != '\0'; len++, i++)
+	while (len < n; &&src[len] != '\0')
 	{
 		dest[i] = src[len];
+		i++;
+		len++;
 	}
 	dest[i] = '\0';
-	return (dest);
+	return (src);
 }
