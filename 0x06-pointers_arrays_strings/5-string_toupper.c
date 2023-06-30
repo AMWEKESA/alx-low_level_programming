@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * string_toupper - change lowercase to uppercase
@@ -6,16 +7,18 @@
  * Return: success
  */
 
-char string_toupper(char *)
+char *string_toupper(char *str)
 {
+	char *ptr;
 	if (str == NULL)
-		return;
+		return (str);
 
-	while (*str != '\0')
+	ptr = str;
+	while (*ptr != '\0')
 	{
-		if (*str >= 'a' && *str <= 'z')
-			*str - 32;
-		str++;
+		if (*ptr >= 'a' && *ptr <= 'z')
+			*ptr = *ptr - ('a' - 'A');
+		ptr++;
 	}
+	return (str);
 }
-
