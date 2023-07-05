@@ -1,17 +1,16 @@
 #include "main.h"
 #include <math.h>
 
-
 /**
  * _sqrt_recursion - returns srrt of a number
- * @n: number whose qrt is to be found
- * Return: results
+ * @n: number to find its sqrt
+ * Return: sqrt or  -1 otherwise
  */
+
+int checkSqrt(int n, int i);
 
 int _sqrt_recursion(int n)
 {
-	int x;
-	int sqrt = x * x;
 
 	if (n < 0)
 	{
@@ -23,6 +22,29 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (_sqrt_recursion(n, n/2);
+		return (checkSqrt(n, n - 1));
+	}
+}
+
+/**
+ * checkSqrt - find the square root using math.h library
+ * @i: current i val
+ * @n: number to find its square root
+ * Return: square root of n if found, -1 otherwise
+ */
+
+int checkSqrt(int n, int i)
+{
+	if (i * i == n)
+	{
+		return (i);
+	}
+	else if (i <= 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (checkSqrt(n, i - 1));
 	}
 }

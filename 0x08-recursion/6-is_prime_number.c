@@ -4,6 +4,7 @@
 /**
  * is_prime_number - prints a string recursively
  * @n: number to be checked
+ * @div: current divisor to check divisibility
  * Return: return 1 if prie else 0
  */
 
