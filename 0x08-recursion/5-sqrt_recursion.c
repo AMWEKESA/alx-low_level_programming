@@ -4,6 +4,7 @@
 /**
  * _sqrt_recursion - returns srrt of a number
  * @n: number to find its sqrt
+ * @i: current i val
  * Return: sqrt or  -1 otherwise
  */
 
