@@ -2,33 +2,46 @@
 #include <string.h>
 
 /**
- * is_palindrome - checks for palindrome properties
- * *s: pontre to string to be ckecked
+ * check_palindrome - checks for palindrome properties
+ *
+ * @i: left index
+ * @s: pointer to string to be checked
+ * @j: Right index* Return: 1 if palindrome, else 0
+ *
+ * Return: 1 if palindrome, else 0
+ */
+int check_palindrome(char *s, int i, int j);
+
+/**
+ * is_palindrome - checks for palindrome properties recusively
+ *
+ * @s: pontre to string to be ckecked
+ *
  * Return: 1 if palindomic else 0
  */
- 
-int palindrome(const int *s, const int srev);
+
 int is_palindrome(char *s)
 {
-	if (*s != srev)
-	{
+	int len;
+
+	len = strlen(s);
+	return (check_palindrome(s, 0, len - 1));
+}
+
+/**
+ * check_palindrome - checks for palindrome properties
+ *
+ * @s: string to be checked
+ * @i: left index
+ * @j: right index
+ * Return: 1 if palindrome, else 0
+ */
+int check_palindrome(char *s, int i, int j)
+{
+	if (i >= j)
+		return (1);
+	else if (s[i] == s[j])
+		return (check_palindrome(s, i + 1, j - 1));
+	else
 		return (0);
 	}
-	else
-		return (palidrome);
-}
-
-int is_palindrome(char *s)
-{
-	int len = strlen(s);
-	int i, j;
-
-	for (i = 0; j = len - 1; i < j; ++i; --j);
-	{
-		if (s[i] != s[j])
-		{
-			return (0);
-		}
-	}
-	return (1);
-}
