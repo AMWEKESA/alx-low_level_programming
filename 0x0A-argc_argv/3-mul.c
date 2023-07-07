@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints argument
@@ -11,13 +12,19 @@
  */
 
 int main(int argc, char *argv[])
-
 {
-	int i;
+	int a, b;
 
-	for (i = 0; i < argc; ++i)
+	if (argc == 3)
 	{
-		printf("%s\n", argv[i]);
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+
+		printf("%d\n", a * b);
+	}
+	else
+	{
+		printf("Error\n");
 	}
 	return (0);
 }
