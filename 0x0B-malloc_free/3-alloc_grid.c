@@ -14,18 +14,18 @@
 int **alloc_grid(int width, int height)
 {
 	int **y;
-	int i, j;
+	int i, j, total_mem;
 
 	if (height <= 0 || height <= 0)
 		return (NULL);
 
-	y = malloc(sizeof(int *) * height);
+	y = malloc(sizeof(int *) * height + 1);
 	if (y == NULL)
 		return (NULL);
 
 	for (i = 0; i < height; ++i)
 	{
-		y[i] = malloc(sizeof(int *) * width);
+		y[i] = malloc(sizeof(int) * width);
 		if (y[i] == NULL)
 		{
 
@@ -37,5 +37,16 @@ int **alloc_grid(int width, int height)
 		}
 		}
 	}
+	y[height] = malloc(sizeof(int));
+	if (y[height] == NULL)
+	{
+		for (j = 0; j < height + 1; ++j)
+			free(y[j]);
+		free(y);
+		return (NULL);
+	}
+	total_mem = (height + 1) * sizeof(int *) + height * width * sizeof(int);
+	*y[height] = total_mem;
+
 	return (y);
 }
