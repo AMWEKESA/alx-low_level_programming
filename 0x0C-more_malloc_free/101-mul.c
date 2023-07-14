@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
 		error();
 	{
 
-		if (! _isdigit(argv[1][0]) ||! _isdigit(argv[2][0]))
+		if (!_isdigit(argv[1][0]) || !_isdigit(argv[2][0]))
 		{
 			error();
 		}
