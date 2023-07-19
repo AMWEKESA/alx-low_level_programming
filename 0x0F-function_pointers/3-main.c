@@ -12,7 +12,7 @@
   * Return: return an int
   */
 
-int main(int argc, char *argv[])
+int main(int __atribute__((__unused__)) argc, char *argv[])
 {
 	int x,y;
 	char *op;
