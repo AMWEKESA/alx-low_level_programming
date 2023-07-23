@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
-  * free_word - free word
+  * free_words - free word
   * @words: pointer to words
   * Return: void
   */
