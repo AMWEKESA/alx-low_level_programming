@@ -5,7 +5,9 @@
 
 /**
   * free_words - free word
+  *
   * @words: pointer to words
+  *
   * Return: void
   */
 
