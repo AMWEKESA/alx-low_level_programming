@@ -11,5 +11,5 @@
 
 		call printf
 
-		xor eax, eax
+		mov eax, 0
 		ret
