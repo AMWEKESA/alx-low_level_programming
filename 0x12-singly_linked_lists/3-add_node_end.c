@@ -40,7 +40,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		tem = tem->next;
 	}
-		
+
 	tem->next = nod;
 	return (nod);
 }
