@@ -26,8 +26,7 @@ size_t looped_listint_len(const listint_t *head)
 		if (x == y)
 		{
 			x = head;
-			while (x != y)
-			{
+			do {
 				nodes++;
 				x = x->next;
 				y = y->next;
@@ -37,7 +36,7 @@ size_t looped_listint_len(const listint_t *head)
 			do {
 				nodes++;
 				x = x->next;
-			}  while (x = y);
+			} while (x != y);
 
 			return (nodes);
 		}
