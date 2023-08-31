@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_uint - converts binary to unsigned int
+ * binary_to_uint - convert binary to unsigned int
  *
  * @b: string containing the binary number
  *
@@ -10,18 +10,20 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	unsigned int x = 0;
+	int x;
+	unsigned int y = 0;
 
 	if (!b)
 		return (0);
 
-	for (i = 0; b[i]; i++)
+	x = 0;
+	while (b[x])
 	{
-		if (b[i] < '0' || b[i] > '1')
+		if (b[x] < '0' || b[x] > '1')
 			return (0);
-		x = 2 * x + (b[i] - '0');
+		y = 2 * y + (b[x] - '0');
+	++x;
 	}
 
-	return (x);
+	return (y);
 }
