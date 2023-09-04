@@ -11,21 +11,29 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int y, i, len = 0;
+	int y, x, len = 0;
 
 	if (filename == NULL)
+    {
 		return (-1);
+    }
 
 	if (text_content != NULL)
-		for (; text_content[len]; ++len)
+    {
+        for (; text_content[len]; ++len)
+        {
 			;
-
+        }
+    }
+		
 	y = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	i = write(y, text_content, len);
+	x = write(y, text_content, len);
 
-	if (y == -1 || i == -1)
-		return (-1);
-
+	if (y == -1 || x == -1)
+    {
+        return (-1);
+    }
+	
 	close(y);
 
 	return (1);
